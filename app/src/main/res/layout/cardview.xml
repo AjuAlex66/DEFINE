@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/colorPrimary"
+    app:cardCornerRadius="3dp"
+    android:layout_marginLeft="2dp"
+    android:layout_marginRight="2dp"
+    android:layout_marginBottom="4dp"
+    app:cardElevation="150dp">
+
+    <FrameLayout
+        android:background="@color/colorHint"
+        android:layout_width="3dp"
+        android:layout_height="match_parent"/>
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="vertical">-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textColor="@color/colorWhite"-->
+<!--            android:textSize="20dp"-->
+<!--            android:text="Titile"-->
+<!--            android:id="@+id/title">-->
+<!--        </TextView>-->
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:textColor="@color/colorWhite"-->
+<!--            android:textSize="8dp"-->
+<!--            android:text="Titile"-->
+<!--            android:id="@+id/name">-->
+<!--        </TextView>-->
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:textSize="18dp"-->
+<!--            android:id="@+id/description"-->
+<!--            android:textColor="@color/colorWhite"-->
+<!--            android:text="Description">-->
+<!--        </TextView>-->
+
+<!--    </LinearLayout>-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/colorHint"
+            android:textSize="18dp"
+            android:text="Titile"
+            android:id="@+id/title"
+            android:paddingLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp">
+        </TextView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout"
+            android:orientation="horizontal"
+            android:layout_marginLeft="12dp"
+            android:visibility="gone"
+            android:layout_marginRight="12dp"
+            android:layout_below="@id/title"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorHint"
+                android:textSize="15dp"
+                android:text="Description"
+                android:autoLink="all"
+                android:id="@+id/description">
+            </TextView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linearLayout"
+            android:orientation="horizontal"
+            android:layout_marginLeft="12dp"
+            android:visibility="gone"
+            android:id="@+id/layName"
+            android:layout_marginRight="12dp"
+            android:layout_marginBottom="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorHint"
+                android:textSize="6dp"
+                android:text="Titile"
+                android:id="@+id/name"
+                android:layout_marginTop="5dp"
+                android:layout_below="@id/linearLayout"
+                android:layout_marginBottom="5dp">
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorHint"
+                android:textSize="6dp"
+                android:text="01 : March : 2020 Sunaday 10 : 40 AM"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/dateTime"
+                android:layout_marginTop="5dp"
+                android:layout_below="@id/linearLayout"
+                android:layout_marginBottom="5dp">
+            </TextView>
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layName"
+            android:id="@+id/likeLay"
+            android:gravity="end"
+            android:visibility="gone"
+            android:background="@color/colorHint"
+            android:orientation="horizontal">
+           <androidx.appcompat.widget.AppCompatImageView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:src="@drawable/love"
+               android:layout_marginTop="2dp"
+               android:layout_marginBottom="1dp"
+               android:layout_marginRight="10dp"
+               android:layout_toLeftOf="@id/edit"
+               android:id="@+id/like">
+           </androidx.appcompat.widget.AppCompatImageView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/like"
+                android:text="38 Likes"
+                android:layout_toLeftOf="@id/edit"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="2dp"
+                android:textSize="8dp"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/edit"
+                android:autofillHints="fddf"
+                android:id="@+id/edit"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="1dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginLeft="8dp">
+            </androidx.appcompat.widget.AppCompatImageView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edit"
+                android:text="38 Edits"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="2dp"
+                android:textSize="8dp"/>
+
+        </RelativeLayout>
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:layout_marginLeft="12dp"-->
+<!--            android:layout_marginRight="12dp"-->
+<!--            android:layout_below="@id/linearLayout"-->
+<!--            android:layout_marginBottom="1dp">-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:id="@+id/linkRef"-->
+<!--                android:autoLink="web">-->
+<!--            </TextView>-->
+
+<!--        </LinearLayout>-->
+<!--        <androidx.appcompat.widget.AppCompatImageButton-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_alignParentRight="true"-->
+<!--            android:visibility="visible"-->
+<!--            android:layout_margin="8dp"-->
+<!--            android:background="@drawable/down_arrow"-->
+<!--            android:id="@+id/downArrow">-->
+<!--        </androidx.appcompat.widget.AppCompatImageButton>-->
+    </RelativeLayout>
+
+
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="2dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorDark"
+    tools:context=".MainActivity">
+
+<!--   <ListView-->
+<!--       android:layout_width="match_parent"-->
+<!--       android:layout_height="match_parent"-->
+<!--       android:id="@+id/myLisview"/>-->
+<!--   <androidx.swiperefreshlayout.widget.SwipeRefreshLayout-->
+<!--       android:layout_width="match_parent"-->
+<!--       android:layout_height="wrap_content"-->
+<!--      android:id="@+id/swipe">-->
+
+      <androidx.core.widget.ContentLoadingProgressBar
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/progressBar"
+          android:layout_centerInParent="true"
+          android:visibility="visible">
+      </androidx.core.widget.ContentLoadingProgressBar>
+      <androidx.recyclerview.widget.RecyclerView
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:id="@+id/recyclerView"
+          app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager">
+      </androidx.recyclerview.widget.RecyclerView>
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:background="@color/cardview_dark_background"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-1921721310026993~4365136059">
+    </com.google.android.gms.ads.AdView>
+<!--   </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>-->
+<!--      test ad-->
+<!--      ca-app-pub-3940256099942544/6300978111-->
+<!--      original id-->
+<!--      ca-app-pub-1921721310026993~4365136059-->
+</RelativeLayout>

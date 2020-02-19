@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorDark"
+    android:padding="40dp"
+    tools:context=".INFO">
+
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:id="@+id/info"-->
+<!--        android:hint="Define what you have just learned in a way that others can understand. It will help you to revise what you learned before going to exam."-->
+<!--        android:textSize="20dp"-->
+<!--        android:textColor="@color/colorWhite"-->
+<!--        android:textAlignment="center"-->
+<!--        android:layout_marginTop="80dp"-->
+<!--        android:inputType="textMultiLine">-->
+<!--    </TextView>-->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/message"
+        android:scaleType="fitXY"
+        android:layout_marginBottom="50dp"
+        android:elevation="25dp">
+
+    </ImageView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/message"
+        android:layout_centerInParent="true"
+        android:hint="Info. Will Appear Here...!"
+        android:textColorHint="@color/colorWhite"
+        android:textSize="20dp"
+        android:textColor="@color/colorWhite"
+        android:textAlignment="center"
+        android:inputType="textMultiLine">
+    </TextView>
+
+
+</RelativeLayout>

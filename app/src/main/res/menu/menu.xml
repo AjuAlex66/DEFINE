@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<!--    <item-->
+<!--        android:id="@+id/inFo"-->
+<!--        android:icon="@drawable/bulb_idea"-->
+<!--        android:title="Info"-->
+<!--        app:showAsAction="always">-->
+<!--    </item>-->
+    <item
+        android:id="@+id/Refresh"
+        android:icon="@drawable/refresh_white"
+        android:title="Refresh"
+        app:showAsAction="always">
+    </item>
+    <item
+        android:id="@+id/Add"
+        android:icon="@drawable/icn_add"
+        android:title="Add"
+        app:showAsAction="always">
+    </item>
+    <item
+        android:id="@+id/Search"
+        android:icon="@drawable/ic_search"
+        android:title="Add"
+        app:actionViewClass="android.widget.SearchView"
+        app:showAsAction="always">
+    </item>
+
+    <item
+        android:id="@+id/settingS"
+        android:title="Developer">
+    </item>
+    <item
+        android:id="@+id/entrieS"
+        android:title="Total entries ">
+    </item>
+<!--    <item-->
+<!--        android:id="@+id/logIn"-->
+<!--        android:title="Login">-->
+<!--    </item>-->
+    <item
+        android:id="@+id/logOut"
+        android:title="Logout">
+    </item>
+
+
+
+</menu>
